@@ -471,9 +471,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('tt-speech', callback_data='tts'),
             InlineKeyboardButton('tgraph', callback_data='tgraph'),
             ],[
-            InlineKeyboardButton('« Back', callback_data='start'),
             InlineKeyboardButton('url shortner', callback_data='shortner'),
             InlineKeyboardButton('zombies', callback_data='zombies'),
+            ],[
+
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -486,7 +487,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗖𝗵𝗮𝘁 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🗳 𝗵𝗲𝗹𝗽 🗳', callback_data='help'),
-            InlineKeyboardButton('📩 𝗮𝗯𝗼𝘂𝘁 📩', callback_data='about')
+            InlineKeyboardButton('📩 𝘀𝘁𝗮𝘁𝘂𝘀 📩', callback_data='stats')
             ],[
             InlineKeyboardButton('🔎𝘀𝗲𝗮𝗿𝗰𝗵', switch_inline_query_current_chat='')
             ],[
