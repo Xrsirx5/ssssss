@@ -468,7 +468,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('《 𝗕𝗮𝗰𝗸', callback_data='start'),
             InlineKeyboardButton('🗑 𝗖𝗹𝗼𝘀𝗲 🗑', callback_data='close_data'),
-            InlineKeyboardButton('𝗡𝗲𝘅𝘁 》', callback_data='nextbutton')
+            InlineKeyboardButton('𝗡𝗲𝘅𝘁 》', callback_data='nextb')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -497,15 +497,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "nextbutton":
+    elif query.data == "nextb":
         buttons = [[
             InlineKeyboardButton('𝗽𝘂𝗿𝗴𝗲', callback_data='purge'),
             InlineKeyboardButton('𝗿𝗲𝘀𝘁𝗿𝗶𝗰', callback_data='restric'),
-            InlineKeyboardButton('𝘀𝗲𝗮𝗿𝗰𝗵', callback_data='search'),
+            InlineKeyboardButton('𝘀𝗲𝗮𝗿𝗰𝗵', callback_data='search')
             ],[
             InlineKeyboardButton('𝗺𝘂𝘀𝗶𝗰', callback_data='music'),
             InlineKeyboardButton('𝘁𝘁-𝘀𝗽𝗲𝗲𝗰𝗵', callback_data='tts'),
-            InlineKeyboardButton('𝘁𝗴𝗿𝗮𝗽𝗵', callback_data='tgraph'),
+            InlineKeyboardButton('𝘁𝗴𝗿𝗮𝗽𝗵', callback_data='tgraph')
             ],[
             InlineKeyboardButton('« 𝗕𝗮𝗰𝗸', callback_data='about')
         ]]
