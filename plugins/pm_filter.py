@@ -356,11 +356,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('👥 𝗦𝗵𝗮𝗿𝗲 𝗯𝗼𝘁 👥', url='https://t.me/JOSPSupport'),
-                InlineKeyboardButton('🧑‍💻 𝗠𝘆 𝗱𝗲𝘃 🧑‍💻', url='https://t.me/JosProjects')
+                InlineKeyboardButton('👥 𝗦𝗵𝗮𝗿𝗲 𝗯𝗼𝘁 👥', url='https://t.me/share/url?url=@Mohalal_robot'),
+                InlineKeyboardButton('🧑‍💻 𝗠𝘆 𝗱𝗲𝘃 🧑‍💻', url='https://t.me/Alifmuhammad_tg')
             ],
             [
-                InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗖𝗵𝗮𝘁 ➕', url=f'https://t.me/+y53tWFUw6Q43NzE9')
+                InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗖𝗵𝗮𝘁 ➕', url=f'http://t.me/Mohalal_robot?startgroup=true')
             ]
             ]
             
@@ -410,11 +410,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{title}"
         buttons = [
             [
-                InlineKeyboardButton('👥 𝗦𝗵𝗮𝗿𝗲 𝗯𝗼𝘁 👥', url='https://t.me/JOSPSupport'),
-                InlineKeyboardButton('🧑‍💻 𝗠𝘆 𝗱𝗲𝘃 🧑‍💻', url='https://t.me/JosProjects')
+                InlineKeyboardButton('👥 𝗦𝗵𝗮𝗿𝗲 𝗯𝗼𝘁 👥', url='https://t.me/Alifmuhammad_tg'),
+                InlineKeyboardButton('🧑‍💻 𝗠𝘆 𝗱𝗲𝘃 🧑‍💻', url='https://t.me/share/url?url=@Mohalal_robot')
             ],
             [
-                InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗖𝗵𝗮𝘁 ➕', url=f'https://t.me/+y53tWFUw6Q43NzE9')
+                InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗖𝗵𝗮𝘁 ➕', url=f'http://t.me/Mohalal_robot?startgroup=true')
             ]
             ]
         await query.answer()
@@ -429,17 +429,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗖𝗵𝗮𝘁 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('help', callback_data='help'),
-            InlineKeyboardButton('about', callback_data='about')
+            InlineKeyboardButton('🗳 𝗵𝗲𝗹𝗽 🗳', callback_data='help'),
+            InlineKeyboardButton('📩 𝗮𝗯𝗼𝘂𝘁 📩', callback_data='about')
             ],[
-            InlineKeyboardButton('search here movie', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔎𝘀𝗲𝗮𝗿𝗰𝗵', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('updates', url='https://t.me/josprojects'),
-            InlineKeyboardButton('movie club', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('👥 𝗦𝗵𝗮𝗿𝗲 𝗯𝗼𝘁 👥', url='https://t.me/share/url?url=@Mohalal_robot'),
+            InlineKeyboardButton('🧑‍💻 𝗠𝘆 𝗱𝗲𝘃 🧑‍💻', url='https://t.me/Alifmuhammad_tg')
             ],[
-            InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
+            InlineKeyboardButton('🗑 𝗖𝗹𝗼𝘀𝗲 🗑', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -483,15 +483,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('status', callback_data='stats'),
-            InlineKeyboardButton('source', callback_data='source')
+            InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗖𝗵𝗮𝘁 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('search movie', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🗳 𝗵𝗲𝗹𝗽 🗳', callback_data='help'),
+            InlineKeyboardButton('📩 𝗮𝗯𝗼𝘂𝘁 📩', callback_data='about')
             ],[
-            InlineKeyboardButton('help & commands', callback_data='help')
+            InlineKeyboardButton('🔎𝘀𝗲𝗮𝗿𝗰𝗵', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('Close ✗', callback_data='close_data')
+            InlineKeyboardButton('👥 𝗦𝗵𝗮𝗿𝗲 𝗯𝗼𝘁 👥', url='https://t.me/share/url?url=@Mohalal_robot'),
+            InlineKeyboardButton('🧑‍💻 𝗠𝘆 𝗱𝗲𝘃 🧑‍💻', url='https://t.me/Alifmuhammad_tg')
+            ],[
+            InlineKeyboardButton('🗑 𝗖𝗹𝗼𝘀𝗲 🗑', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
